@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Usage: centos-repo-fix.sh /etc/yum.repos.d
 for file in $1/*; do
     if [[ -f $file ]]; then
         # Add a # to lines with "mirrorlist=http..."
